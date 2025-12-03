@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #FFD1DC, #FFB6C1, #FF8FAB);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Container Box */
+.container {
+    text-align: center;
+    padding: 40px 60px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Title */
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    color: #C2185B;
+    text-shadow: 3px 3px rgba(0,0,0,0.15);
+}
+
+/* Subtitle */
+.subtitle {
+    margin-top: -10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Enter Button */
+.enter-btn {
+    text-decoration: none;
+    background-color: #FF4081;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.enter-btn:hover {
+    background-color: #E91E63;
+    transform: scale(1.1);
+}
+
+/* Floating Balloons */
+.floating-balloons {
+    font-size: 3rem;
+    margin-top: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}

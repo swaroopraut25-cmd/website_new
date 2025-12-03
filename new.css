@@ -1,0 +1,147 @@
+/* --- Global Styles for Creativity --- */
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* A clean, modern font */
+    color: #4A4A4A;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #FFDAB9 0%, #FFB6C1 100%);
+    /* Soft, festive background gradient */
+    min-height: 100vh;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* --- Header & Name "PRIYA" Styling --- */
+header {
+    background-color: #A0522D;
+    /* Sienne/Brown for contrast */
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 40px;
+}
+
+.main-name {
+    font-family: 'Pacifico', cursive;
+    /* Elegant, script font for the name */
+    font-size: 5rem;
+    /* Very large and prominent */
+    color: #FFD700;
+    /* Gold color */
+    text-shadow: 4px 4px #8B4513;
+    /* Shadow for depth */
+    letter-spacing: 5px;
+    margin: 0;
+    animation: pulse 2s infinite alternate;
+    /* Subtle animation for creativity */
+}
+
+/* --- Birthday Card Styling --- */
+.birthday-card {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.greeting {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #DC143C;
+    /* Crimson Red */
+    margin-bottom: 20px;
+}
+
+.message-box {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    border-left: 5px solid #FFD700;
+    padding-left: 15px;
+    text-align: left;
+}
+
+/* --- Photo Gallery Section --- */
+.photo-gallery {
+    margin: 60px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.photo-gallery h2 {
+    font-size: 2rem;
+    color: #A0522D;
+    margin-bottom: 30px;
+    border-bottom: 2px dashed #FFD700;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.photos-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows photos to wrap on smaller screens */
+    justify-content: center;
+    gap: 30px;
+}
+
+/* --- Beautiful Borders for Photos --- */
+.photo-card {
+    width: 300px;
+    /* Fixed width for consistent look */
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+
+    /* Double Border Effect (Beautiful Border) */
+    border: 5px solid #FFB6C1;
+    /* Light Pink inner border */
+    outline: 5px solid #FFD700;
+    /* Gold outer border */
+    outline-offset: -10px;
+}
+
+.photo-card:hover {
+    transform: scale(1.05) rotate(1deg);
+    /* Subtle hover effect */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 250px;
+    /* Fixed height for consistent image size */
+    object-fit: cover;
+    /* Ensures images look good without stretching */
+    border-radius: 5px;
+    /* Slightly rounded images */
+    display: block;
+}
+
+.caption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #696969;
+}
+
+/* --- Footer --- */
+footer {
+    padding: 20px;
+    background-color: #8B4513;
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* --- Animation Keyframes --- */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.02);
+    }
+}
